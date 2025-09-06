@@ -1,0 +1,428 @@
+/* General Body & HTML Reset */
+:root {
+  --primary-blue: #4a90e2; /* Example blue, adjust as needed */
+  --light-blue: #e3f2fd; /* Lighter blue for background */
+  --text-dark: #333;
+  --text-light: #666;
+  --card-bg: #ffffff;
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+}
+
+.homeBackground {
+  min-height: 100vh;
+  background-color: var(--light-blue);
+  color: var(--text-dark);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+/* Navbar styles would typically be in nav-home/nav-view.module.css */
+
+/* Hero Section (Section 1) */
+.heroSection {
+  display: flex;
+  flex-direction: column; /* Tetap kolom untuk mobile */
+  align-items: center; /* Pusatkan konten */
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
+  gap: 40px; /* Jarak antar elemen dalam hero section */
+  position: relative; /* Penting untuk penempatan absolut jika diperlukan */
+  overflow: hidden; /* Pastikan gambar tidak keluar dari section */
+}
+
+@media (min-width: 768px) {
+  .heroSection {
+    flex-direction: column; /* Menggunakan column untuk menempatkan heroContentWrapper di atas sosialImageHero */
+    justify-content: center; /* Pusatkan secara vertikal */
+    padding: 0 5%;
+    height: 100vh; /* Pastikan tinggi penuh viewport */
+    align-items: center;
+    text-align: left; /* Teks default kembali ke kiri */
+  }
+}
+.heroContentWrapper {
+  display: flex;
+  flex-direction: column; /* Untuk mobile, konten heroLeft dan heroRight disusun kolom */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px; /* Batasi lebar wrapper */
+  margin-bottom: 50px; /* Jarak antara wrapper dan gambar sosial di bawahnya */
+}
+
+@media (min-width: 768px) {
+  .heroContentWrapper {
+    flex-direction: row; /* Untuk desktop, heroLeft dan heroRight disusun baris */
+    justify-content: space-between; /* Memberi jarak antara kiri dan kanan */
+    align-items: center;
+    gap: 80px; /* Jarak antara heroLeft dan heroRight */
+    min-height: 70vh; /* Memberi ruang untuk gambar sosial di bawahnya */
+    margin-bottom: 0; /* Tidak perlu margin bawah jika gambar sosial di luar wrapper */
+  }
+}
+
+
+.heroLeft {
+  flex: 1;
+  max-width: 550px; /* Batasi lebar teks agar tidak terlalu panjang */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Pusatkan di mobile */
+  text-align: center; /* Pusatkan teks di mobile */
+  margin-bottom: 40px; /* Jarak dari gambar analysis di mobile */
+}
+@media (min-width: 768px) {
+  .heroLeft {
+    align-items: flex-start; /* Rata kiri di desktop */
+    text-align: left; /* Teks rata kiri di desktop */
+    margin-bottom: 0; /* Tidak ada margin bawah di desktop */
+    padding-left: 5%; /* Dorong sedikit ke kanan dari kiri viewport */
+    transform: translateY(30px); /* Geser sedikit ke bawah */
+  }
+}
+
+.titleHome {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .titleHome {
+    font-size: 4.5rem;
+  }
+}
+.t2 {
+  font-size: 1.25rem;
+  color: var(--text-light);
+  margin-bottom: 30px;
+}
+
+/* Gambar Sosial yang dipindahkan */
+.sosialImageHero { /* Nama kelas baru untuk gambar sosial */
+  max-width: 80%; /* Ukuran yang lebih proporsional */
+  height: auto;
+  margin-top: 50px; /* Jarak dari section atasnya (heroContentWrapper) */
+  opacity: 0.7; /* Sedikit transparan untuk efek latar belakang */
+  position: relative; /* Atau absolute jika ingin kontrol lebih presisi */
+  left: 0;
+  bottom: 0;
+  z-index: 0; /* Pastikan di belakang teks utama */
+}
+@media (min-width: 768px) {
+  .sosialImageHero {
+    position: absolute; /* Tempatkan secara absolut */
+    width: 60%; /* Ukuran lebih besar untuk latar belakang */
+    max-width: 800px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20%); /* Pusatkan dan dorong sedikit ke bawah */
+    opacity: 0.15; /* Lebih transparan sebagai elemen latar belakang */
+    pointer-events: none; /* Agar tidak menghalangi interaksi lain */
+    margin-top: 0;
+  }
+}
+.heroRight {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Pusatkan gambar di mobile */
+  align-items: center;
+  max-width: 600px; /* Batasi lebar gambar */
+}
+
+@media (min-width: 768px) {
+  .heroRight {
+    justify-content: flex-end; /* Rata kanan di desktop */
+    padding-right: 5%; /* Dorong sedikit ke kiri dari kanan viewport */
+  }
+}
+.analysisImage {
+  max-width: 100%;
+  height: auto;
+}
+
+/* General Section Styling */
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  text-align: center;
+  margin-bottom: 60px;
+  padding-top: 80px; /* Space from top of section */
+}
+
+/* Process Section (Section 2) */
+.processSection {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background-color: var(--card-bg); /* Background putih untuk kontras */
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  opacity: 0; /* Initial state for animation */
+  transform: translateY(50px); /* Initial state for animation */
+}
+
+.processSteps {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .processSteps {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.processStep {
+  background-color: var(--light-blue); /* Warna biru muda untuk setiap step */
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 15px var(--shadow-light);
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stepNumber {
+  background-color: var(--primary-blue);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.processStep h3 {
+  font-size: 1.8rem;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+}
+
+.processStep p {
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+/* Features Section (Section 3) */
+.featuresSection {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  opacity: 0; /* Initial state for animation */
+  transform: scale(0.8); /* Initial state for animation */
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .featuresGrid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+.featureCard {
+  background-color: var(--card-bg);
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 15px var(--shadow-light);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featureIcon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.featureTitle {
+  font-size: 1.7rem;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+}
+
+.featureDescription {
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+/* Blog Section (Section 4) */
+.blogSection {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background-color: var(--card-bg);
+  border-top: 1px solid #eee;
+  opacity: 0; /* Initial state for animation */
+  transform: translateY(50px); /* Initial state for animation */
+}
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .blogGrid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+.blogCard {
+  background-color: var(--light-blue); /* Warna biru muda untuk blog card */
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 15px var(--shadow-light);
+  overflow: hidden; /* Ensures image corners are rounded */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.blogImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blogContent {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allows content to expand */
+}
+
+.blogTitle {
+  font-size: 1.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.blogDescription {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-bottom: 20px;
+  flex-grow: 1; /* Allows description to take up available space */
+}
+
+.blogLink {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  align-self: flex-start; /* Align link to the start */
+}
+
+.blogLink:hover {
+  text-decoration: underline;
+  color: darken(var(--primary-blue), 10%);
+}
+
+/* Responsiveness for smaller screens (already covered by flex-direction: column) */
+@media (max-width: 767px) {
+  .heroSection, .processSection, .featuresSection, .blogSection {
+    padding: 40px 15px; /* Adjust padding for mobile */
+  }
+
+  .titleHome {
+    font-size: 2.5rem;
+  }
+
+  .t2 {
+    font-size: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .processStep h3, .featureTitle, .blogTitle {
+    font-size: 1.4rem;
+  }
+
+  .processStep p, .featureDescription, .blogDescription {
+    font-size: 0.9rem;
+  }
+}
+
+/* ... (CSS yang sudah ada sebelumnya) ... */
+
+/* Hero Section (Section 1) */
+.heroSection {
+  /* ... (styles yang sudah ada) ... */
+}
+
+.heroLeft {
+  /* ... (styles yang sudah ada) ... */
+  display: flex; /* Tambahkan ini agar elemen-elemen di dalamnya bisa diatur flexbox */
+  flex-direction: column; /* Atur dalam kolom */
+  align-items: center; /* Pusatkan horizontal */
+}
+
+@media (min-width: 768px) {
+  .heroLeft {
+    align-items: flex-start; /* Kembali ke kiri di desktop */
+  }
+}
+
+
+.crawlingButton {
+  display: inline-block; /* Membuat link menjadi seperti tombol */
+  padding: 15px 30px;
+  background-color: var(--primary-blue); /* Warna tombol */
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none; /* Hilangkan underline */
+  border-radius: 50px; /* Bentuk kapsul */
+  transition: all 0.3s ease;
+  margin-top: 30px; /* Jarak dari teks di atasnya */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Bayangan */
+}
+
+.crawlingButton:hover {
+  background-color: darken(var(--primary-blue), 10%); /* Lebih gelap saat hover */
+  transform: translateY(-3px); /* Sedikit naik saat hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ... (CSS lainnya) ... */

@@ -1,0 +1,139 @@
+:root {
+  --white: #fff;
+  --primary-500: #3D6ACF;
+  --primary-700: #214f60;
+  --primary-100: #c5f0f4;
+  --grey-700: #617d98;
+  --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s linear;
+  --letterSpacing: 1px;
+}
+
+/* NAVBAR */
+
+.nav {
+  background: var(--white);
+  box-shadow: var(--shadow-1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-center {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  color: var(--primary-500);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.nav-toggle:hover {
+  color: var(--primary-700);
+  transform: rotate(90deg);
+}
+
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.links {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.links li {
+  margin: 0.5rem 0;
+}
+
+.links a {
+  color: var(--grey-700);
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.links a:hover {
+  background: var(--primary-100);
+  color: var(--primary-500);
+  padding-left: 1.5rem;
+}
+
+.social_icons {
+  display: flex;
+  list-style-type: none;
+  margin-left: auto;
+}
+
+.social_icons li {
+  margin-left: 1rem;
+}
+
+.social_icons a {
+  color: var(--primary-500);
+  font-size: 1.2rem;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.social_icons a:hover {
+  color: var(--primary-700);
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+  .nav-center {
+    flex-wrap: nowrap;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .links-container {
+    height: auto !important;
+    overflow: visible;
+    width: auto;
+  }
+
+  .links {
+    display: flex;
+  }
+
+  .links li {
+    margin: 0 0.5rem;
+  }
+
+  .links a {
+    padding: 0.5rem 1rem;
+  }
+}
