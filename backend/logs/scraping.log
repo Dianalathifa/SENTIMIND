@@ -1,0 +1,43 @@
+2025-06-10 08:12:57,282 INFO: Scraping dimulai oleh admin ID: 1
+2025-06-10 08:12:57,283 ERROR: Scraping gagal: name 'run_scraping' is not defined
+2025-06-10 08:15:39,368 INFO: Scraping dimulai oleh admin ID: 1
+2025-06-10 08:15:39,369 ERROR: Scraping gagal: name 'run_scraping' is not defined
+2025-06-10 08:17:11,945 INFO: Scraping dimulai oleh admin ID: 1
+2025-06-10 08:22:55,350 ERROR: Scraping gagal: [WinError 2] The system cannot find the file specified: 'batch_0.csv'
+2025-06-10 08:30:31,831 INFO: Scraping dimulai oleh admin ID: 1
+2025-06-10 08:35:39,616 INFO: Scraping berhasil dijalankan
+2025-06-10 08:46:58,560 INFO: Scraping dimulai oleh admin ID: 1
+2025-06-10 08:51:59,368 INFO: Scraping berhasil dijalankan
+2025-06-10 08:53:25,756 INFO: Scraping dimulai oleh admin ID: 1
+2025-06-10 08:56:14,356 INFO: Scraping berhasil dijalankan
+2025-06-10 09:00:18,407 INFO: Scraping dimulai oleh admin ID: 1
+2025-06-10 09:07:00,159 INFO: Scraping dimulai oleh admin ID: 1
+2025-06-10 09:07:52,370 INFO: Scraping dimulai oleh admin ID: 1
+2025-06-10 09:17:39,124 INFO: Scraping dimulai oleh admin ID: 1
+2025-06-10 09:26:10,708 INFO: Scraping dimulai oleh admin ID: 1
+2025-06-10 09:29:10,279 INFO: Scraping berhasil dijalankan
+2025-06-10 09:32:27,796 INFO: Scraping dimulai oleh admin ID: 1
+2025-06-10 09:35:52,995 INFO: Scraping berhasil dijalankan
+2025-06-10 09:43:44,588 INFO: Scraping dimulai oleh admin ID: 1
+2025-06-10 09:48:30,615 INFO: Scraping berhasil dijalankan
+2025-06-10 10:53:41,442 INFO: Scraping dimulai oleh admin ID: 1
+2025-06-10 10:58:26,104 ERROR: Scraping gagal: Index(['url'], dtype='object')
+2025-06-11 08:05:32,791 INFO: Scraping dimulai oleh admin ID: 1, keyword: kucing, limit: 50
+2025-06-11 08:07:27,549 INFO: Scraping berhasil dijalankan (POST)
+2025-06-11 08:12:16,857 INFO: Scraping dimulai oleh admin ID: 1, keyword: kucing, limit: 50
+2025-06-11 08:13:19,761 INFO: Scraping berhasil dijalankan (POST)
+2025-06-11 08:24:13,419 INFO: Scraping dimulai oleh admin ID: 1
+2025-06-11 08:29:15,415 INFO: Scraping berhasil dijalankan (GET)
+2025-06-11 08:34:25,786 INFO: Scraping dimulai oleh admin ID: 1
+2025-06-11 08:34:25,787 ERROR: Scraping gagal: run_scraping() missing 3 required positional arguments: 'keyword', 'limit', and 'auth_token'
+2025-06-11 08:56:52,440 INFO: Scraping dimulai oleh admin ID: 1
+2025-06-11 09:01:28,140 INFO: Scraping berhasil dijalankan
+2025-06-11 09:14:23,959 INFO: Scraping dimulai oleh admin ID: 1
+2025-06-11 09:19:09,557 INFO: Scraping berhasil dijalankan
+2025-06-11 09:21:15,843 INFO: Scraping dimulai oleh admin ID: 1
+2025-06-11 09:22:05,246 INFO: Scraping dimulai oleh admin ID: 1
+2025-06-11 09:31:23,583 INFO: Scraping berhasil dijalankan
+2025-06-11 13:16:57,969 WARNING: Keyword kosong dalam request scraping.
+2025-06-11 13:17:07,189 WARNING: Keyword kosong dalam request scraping.
+2025-06-16 08:43:35,087 INFO: Scraping dimulai oleh admin ID: 3 dengan keyword: 'kipk' dan count: 50
+2025-06-16 08:43:35,101 ERROR: Scraping gagal karena konfigurasi: TWITTER_BEARER_TOKEN tidak disetel di environment variables server.

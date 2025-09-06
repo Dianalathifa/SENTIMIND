@@ -1,0 +1,813 @@
+import os
+import logging
+
+if not os.path.exists('logs'):
+    os.mkdir('logs')
+
+file_handler = logging.FileHandler('logs/admin.log')
+file_handler.setLevel(logging.INFO)
+
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+file_handler.setFormatter(formatter)
+
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+logger.addHandler(file_handler)
+
+logger.info("Logging started")
+2025-05-22 06:14:31,475 INFO: Percobaan login admin: admin
+2025-05-22 06:14:31,842 INFO: Admin ditemukan: admin, password valid: True
+2025-05-22 06:14:31,843 INFO: Login berhasil: admin (ID: 1)
+2025-05-22 06:23:40,856 INFO: Percobaan login admin: admin
+2025-05-22 06:23:41,393 INFO: Admin ditemukan: admin, password valid: True
+2025-05-22 06:23:41,396 INFO: Login berhasil: admin (ID: 1)
+2025-05-22 06:33:45,238 INFO: Percobaan login admin: admin
+2025-05-22 06:33:45,711 INFO: Admin ditemukan: admin, password valid: True
+2025-05-22 06:33:45,712 INFO: Login berhasil: admin (ID: 1)
+2025-05-22 06:38:55,267 INFO: Percobaan login admin: admin
+2025-05-22 06:38:56,177 INFO: Admin ditemukan: admin, password valid: True
+2025-05-22 06:38:56,179 INFO: Login berhasil: admin (ID: 1)
+2025-05-22 06:40:07,846 INFO: Percobaan login admin: admin
+2025-05-22 06:40:08,296 INFO: Admin ditemukan: admin, password valid: True
+2025-05-22 06:40:08,297 INFO: Login berhasil: admin (ID: 1)
+2025-05-22 06:45:59,616 INFO: Percobaan login admin: admin
+2025-05-22 06:45:59,819 INFO: Admin ditemukan: admin, password valid: True
+2025-05-22 06:45:59,821 INFO: Login berhasil: admin (ID: 1)
+2025-05-22 06:50:57,870 INFO: Percobaan login admin: admin
+2025-05-22 06:50:58,075 INFO: Admin ditemukan: admin, password valid: True
+2025-05-22 06:50:58,075 INFO: Login berhasil: admin (ID: 1)
+2025-05-22 06:51:13,998 INFO: Percobaan login admin: admin
+2025-05-22 06:51:14,256 INFO: Admin ditemukan: admin, password valid: True
+2025-05-22 06:51:14,256 INFO: Login berhasil: admin (ID: 1)
+2025-05-22 07:27:07,141 INFO: Percobaan login admin: admin
+2025-05-22 07:27:07,467 INFO: Admin ditemukan: admin, password valid: True
+2025-05-22 07:27:07,474 INFO: Login berhasil: admin (ID: 1)
+2025-05-22 07:44:51,154 [INFO] Percobaan login admin: admin
+2025-05-22 07:44:51,512 [INFO] Admin ditemukan: admin, password valid: True
+2025-05-22 07:47:31,373 INFO: Percobaan login admin: admin
+2025-05-22 07:47:31,637 INFO: Admin ditemukan: admin, password valid: True
+2025-05-22 07:47:31,638 INFO: Login berhasil: admin (ID: 1)
+2025-05-22 07:47:54,525 [INFO] Percobaan login admin: admin
+2025-05-22 07:47:54,701 [INFO] Admin ditemukan: admin, password valid: True
+2025-05-22 07:48:34,084 INFO: Percobaan login admin: admin
+2025-05-22 07:48:34,266 INFO: Admin ditemukan: admin, password valid: True
+2025-05-22 07:48:34,266 INFO: Login berhasil: admin (ID: 1)
+2025-05-22 07:49:52,957 INFO: Percobaan login admin: admin
+2025-05-22 07:49:53,151 INFO: Admin ditemukan: admin, password valid: True
+2025-05-22 07:49:53,153 INFO: Login berhasil: admin (ID: 1)
+2025-05-22 07:52:25,424 INFO: Percobaan login admin: admin
+2025-05-22 07:52:25,677 INFO: Admin ditemukan: admin, password valid: True
+2025-05-22 07:52:25,677 INFO: Login berhasil: admin (ID: 1)
+2025-05-22 07:58:29,302 INFO: Percobaan login admin: admin
+2025-05-22 07:58:29,578 INFO: Admin ditemukan: admin, password valid: True
+2025-05-22 07:58:29,578 INFO: Login berhasil: admin (ID: 1)
+2025-05-22 07:58:50,886 INFO: Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0Nzg3NTUwOSwianRpIjoiZGYzNDFhNTgtMGE0ZC00NjMzLTg1MGMtMWZlMTViM2E4YjJiIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NDc4NzU1MDksImNzcmYiOiIyYzRlYmFkZS1kYmFhLTRmNzUtODRmMy02MTYxMzRmOTljODMiLCJleHAiOjE3NDc4NzY0MDl9.Lc5vcGE-EIAxxirBi958GY9ze7OndapZdLcZq-qiOEM
+2025-05-22 07:58:50,886 INFO: Current user from token: 1
+2025-05-22 07:58:50,889 INFO: Get admins berhasil, total: 1
+2025-05-22 08:15:53,950 INFO: Percobaan login admin: admin
+2025-05-22 08:15:54,267 INFO: Admin ditemukan: admin, password valid: True
+2025-05-22 08:15:54,272 INFO: Login berhasil: admin (ID: 1)
+2025-05-22 08:23:47,986 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-22 08:24:15,293 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-22 08:24:15,491 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-22 08:25:41,329 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-22 08:25:41,438 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-22 08:32:02,826 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-22 08:32:02,874 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-22 08:42:21,826 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-22 08:42:21,849 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-22 08:47:59,223 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-22 08:47:59,331 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-22 08:59:47,753 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-22 08:59:47,796 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-22 09:00:53,698 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-22 09:00:53,939 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-22 09:47:01,506 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-22 09:47:01,563 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-22 09:47:12,295 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-22 09:47:12,566 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-22 09:49:42,920 INFO: Percobaan login admin: admin
+2025-05-22 09:49:43,362 INFO: Admin ditemukan: admin, password valid: True
+2025-05-22 09:49:43,373 INFO: Login berhasil: admin (ID: 1)
+2025-05-22 09:50:07,051 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-22 09:50:07,286 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-27 10:39:03,120 INFO: Percobaan login admin: admin
+2025-05-27 10:39:03,440 INFO: Admin ditemukan: admin, password valid: False
+2025-05-27 10:39:03,440 WARNING: Login gagal untuk username: admin
+2025-05-27 10:39:14,349 INFO: Percobaan login admin: admin
+2025-05-27 10:39:14,586 INFO: Admin ditemukan: admin, password valid: True
+2025-05-27 10:39:14,597 INFO: Login berhasil: admin (ID: 1)
+2025-05-27 10:40:28,770 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-27 10:40:28,991 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-27 10:41:24,327 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-27 10:41:50,370 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-27 10:41:50,400 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-27 10:53:38,340 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-27 10:53:38,396 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-27 10:57:43,331 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-27 10:57:43,371 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-27 11:08:25,433 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-27 11:08:25,453 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-27 11:09:14,052 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-27 11:09:14,312 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-28 11:18:09,807 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-28 11:18:09,881 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-28 11:27:06,352 INFO: Percobaan login admin: admin
+2025-05-28 11:27:06,662 INFO: Admin ditemukan: admin, password valid: True
+2025-05-28 11:27:06,677 INFO: Login berhasil: admin (ID: 1)
+2025-05-28 11:29:04,429 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-28 11:29:04,514 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-28 11:35:02,680 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-28 11:35:02,804 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-28 11:48:31,690 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-28 11:48:31,783 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-28 11:54:01,229 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-28 11:54:01,270 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-28 11:54:13,110 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-28 11:54:13,361 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-28 11:55:29,998 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-28 11:55:30,131 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-28 13:21:53,467 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-28 13:21:53,531 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-28 13:30:09,471 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-28 13:30:09,574 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-28 13:30:30,326 INFO: [Public] Get all admins berhasil, total: 1
+2025-05-28 13:30:30,604 INFO: [Public] Get all admins berhasil, total: 1
+2025-06-10 08:09:08,245 INFO: Percobaan login admin: admin
+2025-06-10 08:09:53,737 INFO: Percobaan login admin: admin
+2025-06-10 08:09:54,523 INFO: Admin ditemukan: admin, password valid: True
+2025-06-10 08:09:54,544 INFO: Login berhasil: admin (ID: 1)
+2025-06-10 08:11:49,506 INFO: Percobaan login admin: admin
+2025-06-10 08:11:50,138 INFO: Admin ditemukan: admin, password valid: True
+2025-06-10 08:11:50,142 INFO: Login berhasil: admin (ID: 1)
+2025-06-10 08:30:16,963 INFO: Percobaan login admin: admin
+2025-06-10 08:30:17,254 INFO: Admin ditemukan: admin, password valid: True
+2025-06-10 08:30:17,255 INFO: Login berhasil: admin (ID: 1)
+2025-06-10 08:46:41,606 INFO: Percobaan login admin: admin
+2025-06-10 08:46:41,885 INFO: Admin ditemukan: admin, password valid: True
+2025-06-10 08:46:41,885 INFO: Login berhasil: admin (ID: 1)
+2025-06-10 09:06:42,544 INFO: Percobaan login admin: admin
+2025-06-10 09:06:42,868 INFO: Admin ditemukan: admin, password valid: True
+2025-06-10 09:06:42,868 INFO: Login berhasil: admin (ID: 1)
+2025-06-10 09:25:40,547 INFO: Percobaan login admin: admin
+2025-06-10 09:25:40,867 INFO: Admin ditemukan: admin, password valid: True
+2025-06-10 09:25:40,868 INFO: Login berhasil: admin (ID: 1)
+2025-06-10 09:43:30,960 INFO: Percobaan login admin: admin
+2025-06-10 09:43:31,232 INFO: Admin ditemukan: admin, password valid: True
+2025-06-10 09:43:31,233 INFO: Login berhasil: admin (ID: 1)
+2025-06-10 10:53:18,336 INFO: Percobaan login admin: admin
+2025-06-10 10:53:19,448 INFO: Admin ditemukan: admin, password valid: True
+2025-06-10 10:53:19,479 INFO: Login berhasil: admin (ID: 1)
+2025-06-10 11:59:59,866 INFO: Percobaan login admin: admin
+2025-06-10 12:00:00,478 INFO: Admin ditemukan: admin, password valid: True
+2025-06-10 12:00:00,491 INFO: Login berhasil: admin (ID: 1)
+2025-06-10 12:13:05,505 INFO: Percobaan login admin: admin
+2025-06-10 12:13:05,827 INFO: Admin ditemukan: admin, password valid: True
+2025-06-10 12:13:05,833 INFO: Login berhasil: admin (ID: 1)
+2025-06-11 08:04:25,887 INFO: Percobaan login admin: admin
+2025-06-11 08:04:26,617 INFO: Admin ditemukan: admin, password valid: True
+2025-06-11 08:04:26,633 INFO: Login berhasil: admin (ID: 1)
+2025-06-11 08:23:47,470 INFO: Percobaan login admin: admin
+2025-06-11 08:23:47,904 INFO: Admin ditemukan: admin, password valid: True
+2025-06-11 08:23:47,907 INFO: Login berhasil: admin (ID: 1)
+2025-06-11 08:56:30,716 INFO: Percobaan login admin: admin
+2025-06-11 08:56:31,165 INFO: Admin ditemukan: admin, password valid: True
+2025-06-11 08:56:31,166 INFO: Login berhasil: admin (ID: 1)
+2025-06-11 09:14:01,466 INFO: Percobaan login admin: admin
+2025-06-11 09:14:02,438 INFO: Admin ditemukan: admin, password valid: True
+2025-06-11 09:14:02,449 INFO: Login berhasil: admin (ID: 1)
+2025-06-11 12:50:47,253 INFO: Percobaan login admin: admin
+2025-06-11 12:50:47,860 INFO: Admin ditemukan: admin, password valid: True
+2025-06-11 12:50:47,868 INFO: Login berhasil: admin (ID: 1)
+2025-06-11 13:16:38,232 INFO: Percobaan login admin: admin
+2025-06-11 13:16:38,624 INFO: Admin ditemukan: admin, password valid: True
+2025-06-11 13:16:38,630 INFO: Login berhasil: admin (ID: 1)
+2025-06-11 13:23:02,087 INFO: Percobaan login admin: admin
+2025-06-11 13:23:02,402 INFO: Admin ditemukan: admin, password valid: True
+2025-06-11 13:23:02,411 INFO: Login berhasil: admin (ID: 1)
+2025-06-11 13:33:23,662 INFO: Percobaan login admin: admin
+2025-06-11 13:33:24,125 INFO: Admin ditemukan: admin, password valid: True
+2025-06-11 13:33:24,136 INFO: Login berhasil: admin (ID: 1)
+2025-06-12 21:31:05,987 INFO: Percobaan login admin: admin
+2025-06-12 21:31:06,716 INFO: Admin ditemukan: admin, password valid: True
+2025-06-12 21:31:06,726 INFO: Login berhasil: admin (ID: 1)
+2025-06-12 21:51:19,517 INFO: [Public] Get all admins berhasil, total: 1
+2025-06-12 21:51:19,576 INFO: [Public] Get all admins berhasil, total: 1
+2025-06-12 21:55:33,306 INFO: [Public] Get all admins berhasil, total: 1
+2025-06-12 21:55:33,393 INFO: [Public] Get all admins berhasil, total: 1
+2025-06-12 21:55:44,630 INFO: [Public] Get all admins berhasil, total: 1
+2025-06-12 21:55:44,882 INFO: [Public] Get all admins berhasil, total: 1
+2025-06-12 22:02:38,695 INFO: [Public] Get all admins berhasil, total: 1
+2025-06-12 22:02:38,827 INFO: [Public] Get all admins berhasil, total: 1
+2025-06-12 22:03:05,729 INFO: Percobaan login admin: admin
+2025-06-12 22:03:06,198 INFO: Admin ditemukan: admin, password valid: True
+2025-06-12 22:03:06,233 INFO: Login berhasil: admin (ID: 1)
+2025-06-14 22:40:01,099 INFO: Admin baru berhasil didaftarkan: nama_admin_anda (email_anda@example.com)
+2025-06-14 22:41:01,136 WARNING: Register gagal: username sudah dipakai - admin
+2025-06-14 22:41:49,780 INFO: Admin baru berhasil didaftarkan: admin2 (admin2@gmail.com)
+2025-06-14 22:42:19,909 INFO: Percobaan login admin: admin2
+2025-06-14 22:42:20,417 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-14 22:42:20,434 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-14 22:42:52,204 INFO: Percobaan login admin: admin2
+2025-06-14 22:42:52,492 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-14 22:42:52,493 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-14 22:43:02,040 INFO: Percobaan login admin: admin2@gmail.com
+2025-06-14 22:43:02,304 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-14 22:43:02,305 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-15 13:49:09,105 INFO: [Public] Get all admins berhasil, total: 3
+2025-06-15 13:49:09,203 INFO: [Public] Get all admins berhasil, total: 3
+2025-06-15 14:27:39,308 INFO: Percobaan login admin: admin2
+2025-06-15 14:27:40,145 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: False
+2025-06-15 14:27:40,146 WARNING: Login gagal untuk username/email: admin2
+2025-06-15 14:27:49,688 INFO: Percobaan login admin: admin2
+2025-06-15 14:27:50,043 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-15 14:27:50,070 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-15 14:28:30,961 INFO: [Public] Get all admins berhasil, total: 3
+2025-06-15 14:28:31,200 INFO: [Public] Get all admins berhasil, total: 3
+2025-06-15 14:42:49,815 INFO: [Public] Get all admins berhasil, total: 3
+2025-06-15 14:42:49,859 INFO: [Public] Get all admins berhasil, total: 3
+2025-06-15 14:45:28,616 INFO: [Public] Get all admins berhasil, total: 3
+2025-06-15 14:46:01,978 INFO: Admin baru berhasil didaftarkan: admin3 (admin3@gmail.com)
+2025-06-15 14:46:50,763 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:46:50,849 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:47:10,599 INFO: Percobaan login admin: admin3
+2025-06-15 14:47:11,028 INFO: Admin ditemukan: admin3 (admin3@gmail.com), password valid: False
+2025-06-15 14:47:11,029 WARNING: Login gagal untuk username/email: admin3
+2025-06-15 14:47:30,177 INFO: Percobaan login admin: admin3
+2025-06-15 14:47:30,422 INFO: Admin ditemukan: admin3 (admin3@gmail.com), password valid: True
+2025-06-15 14:47:30,429 INFO: Login berhasil: admin3 (ID: 4)
+2025-06-15 14:47:38,103 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:47:38,164 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:52:45,443 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:52:45,883 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:53:09,439 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:53:09,481 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:53:14,476 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:53:14,750 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:55:11,906 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:55:12,256 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:55:31,901 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:55:32,444 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:56:01,550 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:56:03,658 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:56:41,617 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:56:56,164 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:57:08,976 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:57:14,905 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:57:16,597 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:57:38,724 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:57:52,937 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:58:01,269 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:58:04,392 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:58:07,110 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:58:18,992 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 14:58:19,033 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 20:56:25,952 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 20:56:25,963 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 20:56:51,741 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 20:56:51,795 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 20:57:48,191 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 20:57:48,266 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 21:44:29,743 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-15 21:44:29,756 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-16 08:31:58,897 INFO: Percobaan login admin: admin2
+2025-06-16 08:31:59,790 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 08:31:59,796 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 08:38:55,104 INFO: Percobaan login admin: admin2
+2025-06-16 08:38:55,507 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 08:38:55,517 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 08:43:11,415 INFO: Percobaan login admin: admin2
+2025-06-16 08:43:11,772 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 08:43:11,780 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 08:43:24,508 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-16 08:43:24,539 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-16 09:00:59,911 INFO: Percobaan login admin: admin2
+2025-06-16 09:01:00,324 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 09:01:00,325 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 09:07:37,269 INFO: Percobaan login admin: admin2
+2025-06-16 09:07:37,814 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 09:07:37,816 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 09:11:11,895 INFO: Percobaan login admin: admin2
+2025-06-16 09:11:12,508 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 09:11:12,509 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 09:17:03,596 INFO: Percobaan login admin: admin2
+2025-06-16 09:17:04,931 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 09:17:04,960 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 09:17:07,952 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-16 09:17:08,014 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-16 09:18:09,663 INFO: Percobaan login admin: admin2
+2025-06-16 09:18:10,310 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 09:18:10,314 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 09:34:05,003 INFO: Percobaan login admin: admin2
+2025-06-16 09:34:05,530 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 09:34:05,542 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 09:44:50,131 INFO: Percobaan login admin: admin2
+2025-06-16 09:44:50,589 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 09:44:50,598 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 09:58:56,929 INFO: Percobaan login admin: admin2
+2025-06-16 09:58:58,095 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 09:58:58,116 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 10:21:57,464 INFO: Percobaan login admin: admin2
+2025-06-16 10:21:58,821 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 10:21:58,833 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 11:38:33,743 INFO: Percobaan login admin: admin2
+2025-06-16 11:38:34,350 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 11:38:34,363 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 11:56:36,857 INFO: Percobaan login admin: admin2
+2025-06-16 11:56:37,248 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 11:56:37,249 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 13:18:47,752 INFO: Percobaan login admin: admin2
+2025-06-16 13:18:48,463 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 13:18:48,475 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 13:58:25,491 INFO: Percobaan login admin: admin2
+2025-06-16 13:58:26,157 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 13:58:26,172 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 14:20:50,943 INFO: Percobaan login admin: admin2
+2025-06-16 14:20:51,389 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 14:20:51,391 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 14:40:29,337 INFO: Percobaan login admin: admin2
+2025-06-16 14:40:29,869 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 14:40:29,871 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 14:57:24,019 INFO: Percobaan login admin: admin2
+2025-06-16 14:57:25,043 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 14:57:25,049 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 15:35:50,904 INFO: Percobaan login admin: admin2
+2025-06-16 15:35:51,661 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 15:35:51,672 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 15:53:42,013 INFO: Percobaan login admin: admin2
+2025-06-16 15:53:42,393 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 15:53:42,397 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 16:15:22,391 INFO: Percobaan login admin: admin2
+2025-06-16 16:15:22,789 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 16:15:22,791 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 16:37:27,669 INFO: Percobaan login admin: admin2
+2025-06-16 16:37:28,215 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 16:37:28,224 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 21:25:22,119 INFO: Percobaan login admin: admin2
+2025-06-16 21:25:22,796 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 21:25:22,799 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 21:44:17,291 INFO: Percobaan login admin: admin2Admin12345
+2025-06-16 21:44:17,520 WARNING: Admin tidak ditemukan: admin2Admin12345
+2025-06-16 21:44:17,521 WARNING: Login gagal untuk username/email: admin2Admin12345
+2025-06-16 21:44:25,656 INFO: Percobaan login admin: admin2
+2025-06-16 21:44:26,134 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 21:44:26,150 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-16 22:08:30,121 INFO: Percobaan login admin: admin2
+2025-06-16 22:08:31,433 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-16 22:08:31,450 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-17 07:50:33,169 INFO: Percobaan login admin: admin2
+2025-06-17 07:50:33,572 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-17 07:50:33,579 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-17 08:24:21,346 INFO: Percobaan login admin: admin2
+2025-06-17 08:24:22,030 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-17 08:24:22,043 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-17 09:12:34,156 INFO: Percobaan login admin: admin2
+2025-06-17 09:12:34,860 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-17 09:12:34,861 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-17 09:34:03,780 INFO: Percobaan login admin: admin2
+2025-06-17 09:34:04,167 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-17 09:34:04,174 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-17 09:54:28,501 INFO: Percobaan login admin: admin2
+2025-06-17 09:54:28,886 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-17 09:54:28,901 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-17 10:11:03,841 INFO: Percobaan login admin: admin2
+2025-06-17 10:11:04,173 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-17 10:11:04,179 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-17 14:37:59,998 INFO: Percobaan login admin: admin2
+2025-06-17 14:38:00,943 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-17 14:38:00,955 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-17 14:51:59,220 INFO: Percobaan login admin: admin2
+2025-06-17 14:51:59,921 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-17 14:51:59,944 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-17 20:45:14,399 INFO: Percobaan login admin: admin2
+2025-06-17 20:45:14,859 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-17 20:45:14,860 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-17 21:04:51,952 INFO: Percobaan login admin: admin2
+2025-06-17 21:04:52,561 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-17 21:04:52,567 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-17 21:31:01,213 INFO: Percobaan login admin: admin2
+2025-06-17 21:31:01,876 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-17 21:31:01,884 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-17 21:46:40,588 INFO: Percobaan login admin: admin2
+2025-06-17 21:46:41,264 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-17 21:46:41,273 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-17 22:10:04,038 INFO: Percobaan login admin: admin2
+2025-06-17 22:10:04,357 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-17 22:10:04,366 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-18 07:26:33,011 INFO: Percobaan login admin: admin2
+2025-06-18 07:27:10,852 INFO: Percobaan login admin: admin2
+2025-06-18 07:27:11,284 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-18 07:27:11,285 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-18 07:27:15,648 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-18 07:27:15,742 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-18 07:35:10,277 INFO: Percobaan login admin: admin2
+2025-06-18 07:35:10,718 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-18 07:35:10,721 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-18 07:59:42,781 INFO: Percobaan login admin: admin2
+2025-06-18 07:59:43,346 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-18 07:59:43,368 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-18 15:27:43,380 INFO: Percobaan login admin: admin2
+2025-06-18 15:27:45,714 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-18 15:27:45,798 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-21 08:51:30,603 INFO: Percobaan login admin: admin2
+2025-06-21 08:51:30,957 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-21 08:51:30,965 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-21 09:20:14,438 INFO: Percobaan login admin: admin2
+2025-06-21 09:20:14,690 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-21 09:20:14,700 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-21 12:39:29,432 INFO: Percobaan login admin: admin2
+2025-06-21 12:39:29,815 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-21 12:39:29,828 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-21 12:49:03,778 INFO: Percobaan login admin: admin2
+2025-06-21 12:49:04,483 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-21 12:49:04,526 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-21 12:53:51,356 INFO: Percobaan login admin: admin2
+2025-06-21 12:53:51,705 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-21 12:53:51,706 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-21 13:32:36,472 INFO: Percobaan login admin: admin2
+2025-06-21 13:32:37,054 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-21 13:32:37,073 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-21 13:51:49,953 INFO: Percobaan login admin: admin2
+2025-06-21 13:51:50,654 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-21 13:51:50,669 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-21 13:54:08,840 INFO: Percobaan login admin: admin2
+2025-06-21 13:54:09,351 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-21 13:54:09,353 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-21 13:55:20,217 INFO: Percobaan login admin: admin2
+2025-06-21 13:55:20,848 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-21 13:55:20,864 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-22 14:22:20,753 INFO: Percobaan login admin: admin2
+2025-06-22 14:22:22,052 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-22 14:22:22,093 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-23 10:21:13,629 INFO: Percobaan login admin: admin2
+2025-06-23 10:21:14,011 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-23 10:21:14,011 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-23 10:28:18,459 INFO: Percobaan login admin: admin2
+2025-06-23 10:28:18,670 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-23 10:28:18,680 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-23 10:43:48,244 INFO: Percobaan login admin: admin2
+2025-06-23 10:43:48,832 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-23 10:43:48,892 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-23 11:23:37,617 INFO: Percobaan login admin: admin2
+2025-06-23 11:23:38,280 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-23 11:23:38,309 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-23 11:31:23,980 INFO: Percobaan login admin: admin2
+2025-06-23 11:31:24,476 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-23 11:31:24,480 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-23 11:31:29,916 INFO: Percobaan login admin: admin2
+2025-06-23 11:31:30,056 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-23 11:31:30,056 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-23 11:43:40,539 INFO: Percobaan login admin: admin2
+2025-06-23 11:43:40,940 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-23 11:43:40,949 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-23 11:45:17,165 INFO: Percobaan login admin: admin2
+2025-06-23 11:45:17,523 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-23 11:45:17,534 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-23 11:50:13,637 INFO: Percobaan login admin: admin2
+2025-06-23 11:50:14,365 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-23 11:50:14,373 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-23 11:51:46,422 INFO: Percobaan login admin: admin2
+2025-06-23 11:51:46,776 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-23 11:51:46,786 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-23 13:16:09,853 INFO: Percobaan login admin: admin2
+2025-06-23 13:16:10,878 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-23 13:16:10,904 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-23 13:20:37,255 INFO: Percobaan login admin: admin2
+2025-06-23 13:20:37,693 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: False
+2025-06-23 13:20:37,693 WARNING: Login gagal untuk username/email: admin2
+2025-06-23 13:20:44,768 INFO: Percobaan login admin: admin2
+2025-06-23 13:20:45,099 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-23 13:20:45,107 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-23 13:36:03,444 INFO: Percobaan login admin: admin2
+2025-06-23 13:36:03,837 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-23 13:36:03,839 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-23 13:55:00,635 INFO: Percobaan login admin: admin2
+2025-06-23 13:55:01,094 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-23 13:55:01,095 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-23 14:22:52,787 INFO: Percobaan login admin: admin2
+2025-06-23 14:22:53,185 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-23 14:22:53,195 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-23 14:48:59,981 INFO: Percobaan login admin: admin2
+2025-06-23 14:49:00,365 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-23 14:49:00,373 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-24 18:25:08,771 INFO: Percobaan login admin: admin2
+2025-06-24 18:25:10,327 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-24 18:25:10,343 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-24 19:27:36,320 INFO: Percobaan login admin: admin2
+2025-06-24 19:27:36,721 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-24 19:27:36,729 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-24 19:29:58,510 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-24 19:29:58,566 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-25 09:30:28,552 INFO: Percobaan login admin: admin2
+2025-06-25 09:30:59,486 INFO: Percobaan login admin: admin2
+2025-06-25 09:30:59,838 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-25 09:30:59,866 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-25 09:31:04,676 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-25 09:31:04,723 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-25 09:48:01,568 INFO: Percobaan login admin: admin2
+2025-06-25 09:48:02,300 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-25 09:48:02,317 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-25 09:48:07,102 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-25 09:48:07,145 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-27 19:10:20,304 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-27 19:10:20,634 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-27 19:12:36,219 INFO: Percobaan login admin: admin2
+2025-06-27 19:12:36,591 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-27 19:12:36,607 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-27 19:12:41,196 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-27 19:12:41,279 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-27 20:08:50,256 INFO: Percobaan login admin: admin2
+2025-06-27 20:08:50,507 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-27 20:08:50,514 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-28 20:16:13,294 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-28 20:16:13,309 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-28 20:16:54,609 INFO: Percobaan login admin: admin2
+2025-06-28 20:16:54,822 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-28 20:16:54,828 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-28 20:18:18,093 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-28 20:18:18,137 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-28 20:20:45,013 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-28 20:20:45,088 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-28 20:49:49,047 INFO: Percobaan login admin: admin2
+2025-06-28 20:49:49,326 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-28 20:49:49,335 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-29 14:52:45,950 INFO: Percobaan login admin: admin2
+2025-06-29 14:53:17,019 INFO: Percobaan login admin: admin2
+2025-06-29 14:53:17,565 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-29 14:53:17,579 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-29 14:53:45,975 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-29 14:53:46,027 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-29 15:09:35,400 INFO: Percobaan login admin: admin2
+2025-06-29 15:09:35,696 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-29 15:09:35,709 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-29 15:09:47,016 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-29 15:09:47,083 INFO: [Public] Get all admins berhasil, total: 4
+2025-06-29 18:44:31,051 INFO: Percobaan login admin: admin2
+2025-06-29 18:44:32,150 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-29 18:44:32,166 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-29 19:04:55,293 INFO: Percobaan login admin: admin2
+2025-06-29 19:04:56,294 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-29 19:04:56,307 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-29 19:28:06,887 INFO: Percobaan login admin: admin2
+2025-06-29 19:28:07,114 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-29 19:28:07,119 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-29 19:50:34,141 INFO: Percobaan login admin: admin2
+2025-06-29 19:50:34,399 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-29 19:50:34,399 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-29 20:26:20,978 INFO: Percobaan login admin: admin2
+2025-06-29 20:26:21,248 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-29 20:26:21,250 INFO: Login berhasil: admin2 (ID: 3)
+2025-06-29 21:23:51,319 INFO: Percobaan login admin: admin2
+2025-06-29 21:23:52,480 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-06-29 21:23:52,490 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-02 14:50:03,576 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-02 14:50:03,586 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-02 14:52:22,162 INFO: Percobaan login admin: admin2
+2025-07-02 14:52:22,339 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-02 14:52:22,362 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-05 20:22:27,883 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-05 20:22:28,210 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-06 01:05:15,839 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-06 01:05:16,159 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-06 01:05:17,648 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-06 01:05:17,966 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-06 01:41:57,819 INFO: Percobaan login admin: admin2
+2025-07-06 01:41:58,080 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 01:41:58,093 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 01:44:01,915 INFO: Percobaan login admin: admin2
+2025-07-06 01:44:02,149 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 01:44:02,162 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 01:47:03,552 INFO: Percobaan login admin: admin2
+2025-07-06 01:47:03,790 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 01:47:03,792 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 01:49:34,590 INFO: Percobaan login admin: admin2
+2025-07-06 01:49:34,833 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 01:49:34,834 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 02:11:06,693 INFO: Percobaan login admin: admin2
+2025-07-06 02:11:06,953 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 02:11:06,961 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 02:12:38,384 INFO: Percobaan login admin: admin2
+2025-07-06 02:12:38,628 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 02:12:38,628 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 02:28:08,778 INFO: Percobaan login admin: admin2
+2025-07-06 02:28:09,029 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 02:28:09,034 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 02:45:05,045 INFO: Percobaan login admin: admin2
+2025-07-06 02:45:05,256 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 02:45:05,271 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 03:00:35,812 INFO: Percobaan login admin: admin2
+2025-07-06 03:00:36,072 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 03:00:36,088 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 03:15:47,965 INFO: Percobaan login admin: admin2
+2025-07-06 03:15:48,367 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 03:15:48,373 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 09:57:49,911 INFO: Percobaan login admin: admin2
+2025-07-06 09:57:50,747 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 09:57:50,758 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 09:58:02,785 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-06 09:58:02,865 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-06 10:52:09,481 INFO: Percobaan login admin: admin2
+2025-07-06 10:52:09,921 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 10:52:09,936 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 10:55:49,762 INFO: Percobaan login admin: admin2
+2025-07-06 10:55:50,046 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 10:55:50,062 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 11:04:32,080 INFO: Percobaan login admin: admin2
+2025-07-06 11:04:32,345 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 11:04:32,355 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 11:10:49,630 INFO: Percobaan login admin: admin2
+2025-07-06 11:10:49,900 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 11:10:49,906 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 11:13:49,642 INFO: Percobaan login admin: admin2
+2025-07-06 11:13:50,046 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 11:13:50,063 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 11:19:31,651 INFO: Percobaan login admin: admin2
+2025-07-06 11:19:31,888 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 11:19:31,890 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 11:23:37,453 INFO: Percobaan login admin: admin2
+2025-07-06 11:23:37,653 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 11:23:37,668 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 11:27:35,210 INFO: Percobaan login admin: admin2
+2025-07-06 11:27:35,739 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 11:27:35,758 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 11:31:51,233 INFO: Percobaan login admin: admin2
+2025-07-06 11:31:51,566 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 11:31:51,566 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 11:42:27,352 INFO: Percobaan login admin: admin2
+2025-07-06 11:42:27,725 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 11:42:27,745 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-06 11:43:19,151 INFO: Percobaan login admin: admin2
+2025-07-06 11:43:19,299 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-06 11:43:19,299 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-07 17:49:36,025 INFO: Percobaan login admin: admin2
+2025-07-07 17:51:21,962 INFO: Percobaan login admin: admin2
+2025-07-07 17:51:22,539 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-07 17:51:22,559 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-07 18:09:22,429 INFO: Percobaan login admin: admin2
+2025-07-07 18:09:22,972 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-07 18:09:23,002 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-07 18:11:16,602 INFO: Percobaan login admin: admin2
+2025-07-07 18:11:16,988 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-07 18:11:16,991 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-07 19:23:24,535 INFO: Percobaan login admin: admin2
+2025-07-07 19:23:24,984 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-07 19:23:25,003 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-07 20:32:42,511 INFO: Percobaan login admin: admin2
+2025-07-07 20:32:42,823 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-07 20:32:42,834 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-07 20:46:11,022 INFO: Percobaan login admin: admin2
+2025-07-07 20:46:11,378 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: False
+2025-07-07 20:46:11,379 WARNING: Login gagal untuk username/email: admin2
+2025-07-07 20:46:15,543 INFO: Percobaan login admin: admin2
+2025-07-07 20:46:15,693 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-07 20:46:15,705 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-07 21:30:08,465 INFO: Percobaan login admin: admin2
+2025-07-07 21:30:08,849 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-07 21:30:08,859 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-07 21:33:39,750 INFO: Percobaan login admin: admin2
+2025-07-07 21:33:40,262 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-07 21:33:40,285 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-07 21:41:48,507 INFO: Percobaan login admin: admin2
+2025-07-07 21:41:48,873 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-07 21:41:48,884 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-07 21:45:08,081 INFO: Percobaan login admin: admin2
+2025-07-07 21:45:09,276 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-07 21:45:09,298 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-07 21:45:52,895 INFO: Percobaan login admin: admin2
+2025-07-07 21:45:53,230 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-07 21:45:53,230 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-07 23:51:23,291 INFO: Percobaan login admin: admin2
+2025-07-07 23:51:23,522 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-07 23:51:23,540 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-08 00:01:04,517 INFO: Percobaan login admin: admin2
+2025-07-08 00:01:04,823 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-08 00:01:04,830 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-08 00:36:55,441 INFO: Percobaan login admin: admin2
+2025-07-08 00:36:56,844 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-08 00:36:56,868 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-08 00:53:07,967 INFO: Percobaan login admin: admin2
+2025-07-08 00:53:08,573 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-08 00:53:08,582 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-08 01:10:42,711 INFO: Percobaan login admin: admin2
+2025-07-08 01:10:43,501 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-08 01:10:43,530 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-08 01:12:01,500 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-08 01:12:01,564 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-09 07:50:48,135 INFO: Percobaan login admin: admin2
+2025-07-09 07:50:48,647 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-09 07:50:48,690 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-09 07:50:56,102 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-09 07:50:56,200 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-09 07:51:03,302 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-09 07:51:03,562 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-09 08:03:33,263 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-09 08:03:33,314 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-09 08:27:56,731 INFO: Percobaan login admin: admin2
+2025-07-09 08:27:57,286 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-09 08:27:57,309 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-09 08:28:01,076 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-09 08:28:01,404 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-09 08:46:06,871 INFO: Percobaan login admin: admin2
+2025-07-09 08:46:07,659 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: False
+2025-07-09 08:46:07,661 WARNING: Login gagal untuk username/email: admin2
+2025-07-09 08:46:15,195 INFO: Percobaan login admin: admin2
+2025-07-09 08:46:15,614 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-09 08:46:15,636 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-09 09:06:34,697 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-09 09:06:34,763 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-14 00:07:28,264 INFO: Percobaan login admin: admin2
+2025-07-14 00:07:28,875 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-14 00:07:28,928 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-14 16:56:47,170 INFO: Percobaan login admin: admin2
+2025-07-14 16:56:48,105 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-14 16:56:48,120 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-21 06:13:37,803 INFO: Percobaan login admin: admin2
+2025-07-21 06:13:38,644 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-21 06:13:38,656 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-21 06:29:10,379 INFO: Percobaan login admin: admin2
+2025-07-21 06:29:10,507 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-21 06:29:10,515 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-21 07:01:09,691 INFO: Percobaan login admin: admin2
+2025-07-21 07:01:09,995 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-21 07:01:10,002 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-21 07:24:22,845 INFO: Percobaan login admin: admin2
+2025-07-21 07:24:23,115 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-21 07:24:23,121 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-21 07:52:10,395 INFO: Percobaan login admin: admin2
+2025-07-21 07:52:11,372 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-21 07:52:11,375 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-21 08:15:19,172 INFO: Percobaan login admin: admin2
+2025-07-21 08:15:20,188 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-21 08:15:20,197 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-21 08:31:56,865 INFO: Percobaan login admin: admin2
+2025-07-21 08:31:57,295 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-21 08:31:57,312 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-21 09:00:27,866 INFO: Percobaan login admin: admin2
+2025-07-21 09:00:28,321 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-21 09:00:28,336 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-21 09:38:51,837 INFO: Percobaan login admin: admin2
+2025-07-21 09:38:52,984 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-21 09:38:52,993 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-21 15:14:08,603 INFO: Percobaan login admin: admin2
+2025-07-21 15:14:09,104 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-21 15:14:09,117 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-25 13:38:53,462 INFO: Percobaan login admin: Admin2
+2025-07-25 13:38:53,930 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-25 13:38:53,942 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-25 13:39:01,958 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-25 13:39:02,023 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-25 13:57:40,523 INFO: Percobaan login admin: Admin2
+2025-07-25 13:57:41,113 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-25 13:57:41,113 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-25 14:06:43,131 INFO: Percobaan login admin: Admin2
+2025-07-25 14:06:43,440 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-25 14:06:43,448 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-25 14:07:23,121 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-25 14:07:23,431 INFO: [Public] Get all admins berhasil, total: 4
+2025-07-25 14:39:45,155 INFO: Percobaan login admin: Admin2
+2025-07-25 14:39:45,411 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-25 14:39:45,415 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-25 14:56:52,663 INFO: Percobaan login admin: Admin2
+2025-07-25 14:56:52,949 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-25 14:56:52,978 INFO: Login berhasil: admin2 (ID: 3)
+2025-07-25 15:30:14,021 INFO: Percobaan login admin: Admin12345
+2025-07-25 15:30:14,351 WARNING: Admin tidak ditemukan: Admin12345
+2025-07-25 15:30:14,351 WARNING: Login gagal untuk username/email: Admin12345
+2025-07-25 15:30:40,542 INFO: Percobaan login admin: Admin12345
+2025-07-25 15:30:40,554 WARNING: Admin tidak ditemukan: Admin12345
+2025-07-25 15:30:40,564 WARNING: Login gagal untuk username/email: Admin12345
+2025-07-25 15:30:49,075 INFO: Percobaan login admin: Admin2
+2025-07-25 15:30:49,402 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-07-25 15:30:49,412 INFO: Login berhasil: admin2 (ID: 3)
+2025-09-06 14:30:52,085 INFO: [Public] Get all admins berhasil, total: 4
+2025-09-06 14:30:52,424 INFO: [Public] Get all admins berhasil, total: 4
+2025-09-06 14:31:20,684 INFO: Percobaan login admin: Admin2
+2025-09-06 14:31:20,887 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: True
+2025-09-06 14:31:20,905 INFO: Login berhasil: admin2 (ID: 3)
+2025-09-06 14:31:46,736 INFO: Percobaan login admin: Admin2
+2025-09-06 14:31:46,968 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: False
+2025-09-06 14:31:46,968 WARNING: Login gagal untuk username/email: Admin2
+2025-09-06 14:31:51,889 INFO: Percobaan login admin: Admin2
+2025-09-06 14:31:52,102 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: False
+2025-09-06 14:31:52,102 WARNING: Login gagal untuk username/email: Admin2
+2025-09-06 14:31:57,486 INFO: Percobaan login admin: Admin2
+2025-09-06 14:31:57,633 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: False
+2025-09-06 14:31:57,633 WARNING: Login gagal untuk username/email: Admin2
+2025-09-06 14:32:00,068 INFO: Percobaan login admin: Admin2
+2025-09-06 14:32:00,202 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: False
+2025-09-06 14:32:00,202 WARNING: Login gagal untuk username/email: Admin2
+2025-09-06 14:32:15,337 INFO: Percobaan login admin: Admin2
+2025-09-06 14:32:15,581 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: False
+2025-09-06 14:32:15,581 WARNING: Login gagal untuk username/email: Admin2
+2025-09-06 14:32:21,897 INFO: Percobaan login admin: Admin2
+2025-09-06 14:32:22,119 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: False
+2025-09-06 14:32:22,121 WARNING: Login gagal untuk username/email: Admin2
+2025-09-06 14:32:28,296 INFO: Percobaan login admin: Admin2
+2025-09-06 14:32:28,451 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: False
+2025-09-06 14:32:28,451 WARNING: Login gagal untuk username/email: Admin2
+2025-09-06 14:32:32,135 INFO: Percobaan login admin: Admin2
+2025-09-06 14:32:32,315 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: False
+2025-09-06 14:32:32,315 WARNING: Login gagal untuk username/email: Admin2
+2025-09-06 14:32:53,682 INFO: Percobaan login admin: Admin2
+2025-09-06 14:32:53,865 INFO: Admin ditemukan: admin2 (admin2@gmail.com), password valid: False
+2025-09-06 14:32:53,865 WARNING: Login gagal untuk username/email: Admin2

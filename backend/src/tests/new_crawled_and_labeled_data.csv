@@ -1,0 +1,11 @@
+tweet_text,actual_sentiment_manual
+"Sangat senang dengan liburan ini, cuaca sempurna!",Positif
+"Layanan internet sangat buruk akhir-akhir ini, bikin frustrasi.",Negatif
+"Rapat pagi ini cukup membosankan, tapi penting.",Netral
+"Produk baru ini inovatif dan sangat membantu!",Positif
+"Berita ekonomi terbaru tampak stabil, tidak ada yang mengejutkan.",Netral
+"Antrean di bank panjang sekali, membuang waktu.",Negatif
+"Terima kasih untuk bantuan cepatnya, sangat menghargai.",Positif
+"Film yang baru saja saya tonton cukup standar, tidak istimewa.",Netral
+"Sangat kecewa dengan kualitas makanan di restoran itu.",Negatif
+"Hari ini sangat produktif, merasa bahagia!",Positif
